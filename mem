@@ -1,0 +1,48 @@
+conky.config = {
+  background = false,
+  update_interval = 1,
+  cpu_avg_samples = 2,
+  net_avg_samples = 2,
+  override_utf8_locale = true,
+  double_buffer = true,
+  no_buffers = true,
+  text_buffer_size = 2048,
+  imlib_cache_size = 0,
+  border_inner_margin=0,
+  border_outer_margin=0,
+  alignment  = 'tl',
+  minimum_width = 160,
+  minimum_height = 160,
+  maximum_width= 160,
+  gap_x=30,
+  gap_y=422,
+  draw_shades = false,
+  draw_outline = false,
+  draw_borders = false,
+  draw_graph_borders = false,
+  use_xft = true,
+  font = 'DejaVu Sans Mono:bold:size=10',
+  xftalpha = 0.8,
+  uppercase = false,
+  default_color = white,
+  own_window = true,
+  own_window_class = 'Conky',
+  own_window_type = 'desktop',
+  own_window_transparent = true,
+  own_window_argb_visual = true,
+  own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager'
+}
+ 
+conky.text=[[
+${font DejaVu Sans Mono:bold:size=14}RAM ${alignr}$memperc%${font}
+${font DejaVu Sans Mono:bold:size=12}${stippled_hr}${font}
+
+${top_mem name 1} ${alignr}${top_mem mem 1}
+${top_mem name 2} ${alignr}${top_mem mem 2}
+${top_mem name 3} ${alignr}${top_mem mem 3}
+${top_mem name 4} ${alignr}${top_mem mem 4}
+${top_mem name 5} ${alignr}${top_mem mem 5}
+${top_mem name 6} ${alignr}${top_mem mem 6}
+${top_mem name 7} ${alignr}${top_mem mem 7}
+]]
+
