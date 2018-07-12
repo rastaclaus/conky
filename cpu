@@ -13,7 +13,7 @@
   border_outer_margin=0,
   alignment  = 'tl',
   gap_x = 260,
-  gap_y = 422,
+  gap_y = 382,
   draw_shades = false,
   draw_outline = false,
   draw_borders = false,

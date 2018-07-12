@@ -11,11 +11,11 @@ conky.config = {
   imlib_cache_size = 0,
   border_inner_margin=0,
   border_outer_margin=0,
-  alignment  = 'tl',
+  alignment  = 'tr',
   minimum_width = 200,
   minimum_height = 80,
   gap_x=40,
-  gap_y=620,
+  gap_y=38,
   draw_shades = false,
   draw_outline = false,
   draw_borders = false,
@@ -34,7 +34,7 @@ conky.config = {
 }
 
 conky.text = [[
-${font DejaVu Sans Mono:bold:size=14}${alignc}TO-DO LIST${alignr}${font DejaVu Sans Mono:size=12}(${lines /home/artems/notes.txt})${font}
+${font DejaVu Sans Mono:bold:size=14}${alignc}TO-DO LIST${alignr}${font DejaVu Sans Mono:size=12}(${lines /home/rastaclaus/notes.txt})${font}
 ${stippled_hr}
 ${voffset 10}${execp ~/.conky/viewnotes.sh}
 ]]

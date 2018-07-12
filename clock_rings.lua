@@ -144,24 +144,24 @@ settings_table = {
 		start_angle=212,
 		end_angle=329
 	},
-	--{
-		--name='battery_percent',
-		--arg='BAT0',
-		--max=100,
-		--bg_colour=0xffffff,
-		--bg_alpha=0.2,
-		--fg_colour=0xffffff,
-		--fg_alpha=0.5,
-		--x=160, y=155,
-		--radius=84,
-		--thickness=22.5,
-		--start_angle=-27,
-		--end_angle=88
-	--},
+	{
+		name='battery_percent',
+		arg='BAT1',
+		max=100,
+		bg_colour=0xffffff,
+		bg_alpha=0.2,
+		fg_colour=0xffffff,
+		fg_alpha=0.5,
+		x=160, y=155,
+		radius=84,
+		thickness=22.5,
+		start_angle=-27,
+		end_angle=88
+	},
 	{
 		name='cpu', -- dummy (used for arc)
 		arg='',
-		max=1,
+		max=100,
 		bg_colour=0xd5dcde,
 		bg_alpha=0.7,
 		fg_colour=0xd5dcde,
