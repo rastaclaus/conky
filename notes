@@ -36,5 +36,5 @@ conky.config = {
 conky.text = [[
 ${font DejaVu Sans Mono:bold:size=14}${alignc}TO-DO LIST${alignr}${font DejaVu Sans Mono:size=12}(${lines /home/artems/notes.txt})${font}
 ${stippled_hr}
-${voffset 10}${execp ~/.conky/viewnotes.sh}
+${voffset 10}${execp /home/artems/.config/conky/viewnotes.sh}
 ]]

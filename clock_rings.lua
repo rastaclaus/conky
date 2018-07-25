@@ -66,7 +66,7 @@ settings_table = {
 		bg_alpha=0.1,
 		fg_colour=0xffffff,
 		fg_alpha=0.6,
-		x=160, y=155,
+		x=160, y=175,
 		radius=65,
 		thickness=4,
 		start_angle=0,
@@ -80,7 +80,7 @@ settings_table = {
 		bg_alpha=0.2,
 		fg_colour=0xffffff,
 		fg_alpha=0.5,
-		x=160, y=155,
+		x=160, y=175,
 		radius=75,
 		thickness=5,
 		start_angle=93,
@@ -94,7 +94,7 @@ settings_table = {
 		bg_alpha=0.2,
 		fg_colour=0xffffff,
 		fg_alpha=0.5,
-		x=160, y=155,
+		x=160, y=175,
 		radius=81,
 		thickness=5,
 		start_angle=93,
@@ -109,7 +109,7 @@ settings_table = {
                 bg_alpha=0.2,
                 fg_colour=0xffffff,
                 fg_alpha=0.5,
-                x=160, y=155,
+                x=160, y=175,
                 radius=87,
                 thickness=5,
                 start_angle=93,
@@ -124,7 +124,7 @@ settings_table = {
                 bg_alpha=0.2,
                 fg_colour=0xffffff,
                 fg_alpha=0.5,
-                x=160, y=155,
+                x=160, y=175,
                 radius=93,
                 thickness=5,
                 start_angle=93,
@@ -138,7 +138,7 @@ settings_table = {
 		bg_alpha=0.2,
 		fg_colour=0xffffff,
 		fg_alpha=0.5,
-		x=160, y=155,
+		x=160, y=175,
 		radius=84,
 		thickness=22.5,
 		start_angle=212,
@@ -166,7 +166,7 @@ settings_table = {
 		bg_alpha=0.7,
 		fg_colour=0xd5dcde,
 		fg_alpha=0,
-		x=162, y=155,
+		x=162, y=175,
 		radius=118,
 		thickness=2,
 		start_angle=75,
@@ -180,7 +180,7 @@ settings_table = {
 		bg_alpha=0.7,
 		fg_colour=0xffffff,
 		fg_alpha=0,
-		x=266, y=155,
+		x=266, y=175,
 		radius=308,
 		thickness=2,
 		start_angle=84,
@@ -194,7 +194,7 @@ settings_table = {
 		bg_alpha=0.2,
 		fg_colour=0xffffff,
 		fg_alpha=0.5,
-		x=160, y=155,
+		x=160, y=175,
 		radius=105,
 		thickness=5,
 		start_angle=-120,
@@ -208,7 +208,7 @@ settings_table = {
 		bg_alpha=0.2,
 		fg_colour=0xffffff,
 		fg_alpha=0.5,
-		x=160, y=155,
+		x=160, y=175,
 		radius=105,
 		thickness=5,
 		start_angle=1.5,
@@ -223,7 +223,7 @@ clock_r=65
 -- "clock_x" and "clock_y" are the coordinates of the centre of the clock, in pixels, from the top left of the Conky window.
 
 clock_x=160
-clock_y=155
+clock_y=175
 
 -- Colour & alpha of the clock hands
 
