@@ -24,7 +24,7 @@ conky.config = {
   default_color = white,
   own_window = true,
   own_window_class = 'Conky',
-  own_window_type = 'desktop',
+  own_window_type = 'override',
   own_window_transparent = true,
   own_window_argb_visual = true,
   own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
@@ -42,7 +42,7 @@ ${font DejaVu Sans Mono:bold:size=12}Disk usage: /  ${fs_used /}/${fs_size /}
 ${voffset 105}${goto 115}${font DejaVu Sans Mono:bold:size=24}${time %H:%M}${voffset -10}${font DejaVu Sans Mono:bold:size=10}${font}
 ${voffset -28}${goto 268}${hr 2}
 ${voffset -103}${goto 278}${cpugraph 80,285 d5dcde ffffff}
-${voffset 16}${goto 285}${time %A, %d %B %Y}						
+${voffset 12}${goto 285}${font DejaVu Sans Mono:size=14}${time %A, %d %B %Y}						
 ${font DejaVu Sans Mono:size=12}${goto 285}host: ${nodename}
 ${font DejaVu Sans Mono:size=12}${goto 285}user: ${execpi 600 /usr/bin/whoami}
 ${font DejaVu Sans Mono:size=12}${goto 285}battery: ${battery BAT1}$font
