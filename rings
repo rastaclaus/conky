@@ -43,5 +43,5 @@ ${voffset 100}${goto 115}${font DejaVu Sans Mono:bold:size=24}${time %H:%M}${vof
 ${voffset -28}${goto 268}${hr 2}
 ${voffset -103}${goto 278}${cpugraph 80,285 d5dcde ffffff}
 ${voffset 16}${goto 285}${font DejaVu Sans Mono:bold:size=14}${time %A, %d %B %Y}
-${font DejaVu Sans Mono:bold:size=14}${voffset -140}${goto 300}LAN:     ${addr enp7s0}
+${font DejaVu Sans Mono:bold:size=14}${voffset -140}${goto 300}LAN:     ${addr enp10s0}
 ]]

@@ -8,7 +8,7 @@ xml = requests.get(URL).text
 soup = BeautifulSoup(xml, 'xml')
 
 news = [item.title.string for item in soup.find_all('item')]
-for news_item in news[:5]:
+for news_item in news[:20]:
     for line in textwrap.wrap(news_item):
         print(line)
     print()
