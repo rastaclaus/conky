@@ -20,7 +20,7 @@ conky.config = {
   draw_graph_borders = false,
   use_xft = true,
   font = 'DejaVu Sans Mono:size=10',
-  xftalpha = 0.8,
+  xftalpha = 0.5,
   uppercase = false,
   default_color = white,
   own_window = true,
