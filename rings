@@ -38,17 +38,17 @@ conky.config = {
 
 
 conky.text = [[
-  ${font DejaVu Sans Mono:bold:size=12}  /   ${fs_used /}/${fs_size /}
-${voffset 100}${goto 115}${font DejaVu Sans Mono:bold:size=24}${time %H:%M}${voffset -10}${font DejaVu Sans Mono:bold:size=10}${font}
+${font DejaVu Sans Mono:bold:size=14}  /   ${fs_used /}/${fs_size /}
+${voffset 100}${goto 115}${font DejaVu Sans Mono:bold:size=24}${time %H:%M}${voffset -10}${font DejaVu Sans Mono:bold:size=12}${font}
 ${voffset -28}${goto 268}${hr 2}
 ${voffset -108}${goto 278}${cpugraph 80,285 d5dcde ffffff}
 
-${font DejaVu Sans Mono:bold:size=12}${voffset -200}${goto 320}WIFI:     ${addr wlan0}
-${font DejaVu Sans Mono:size=10}${goto 330}signal: ${wireless_link_qual_perc wlan0}%
-${font DejaVu Sans Mono:size=10}${goto 330}up: ${upspeed wlan0}, down: ${downspeed wlan0}
+${font DejaVu Sans Mono:bold:size=14}${voffset -200}${goto 320}WIFI:     ${addr wlan0}
+${font DejaVu Sans Mono:size=12}${goto 330}signal: ${wireless_link_qual_perc wlan0}%
+${font DejaVu Sans Mono:size=12}${goto 330}up: ${upspeed wlan0}, down: ${downspeed wlan0}
 ${voffset 96}${goto 285}${font DejaVu Sans Mono:bold:size=14}${time %A, %d %B %Y}
-${font DejaVu Sans Mono:size=12}${goto 285}host: ${nodename}
-${font DejaVu Sans Mono:size=12}${goto 285}user: ${execpi 600 /usr/bin/whoami}
-${font DejaVu Sans Mono:size=12}${goto 285}battery: ${battery BAT1}
-${font DejaVu Sans Mono:size=12}${goto 285}remain: ${battery_time BAT1}
+${font DejaVu Sans Mono:size=14}${goto 285}host: ${nodename}
+${font DejaVu Sans Mono:size=14}${goto 285}user: ${execpi 600 /usr/bin/whoami}
+${font DejaVu Sans Mono:size=14}${goto 285}battery: ${battery BAT1}
+${font DejaVu Sans Mono:size=14}${goto 285}remain: ${battery_time BAT1}
 ]]

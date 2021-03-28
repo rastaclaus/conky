@@ -21,7 +21,7 @@ conky.config = {
   draw_borders = false,
   draw_graph_borders = false,
   use_xft = true,
-  font = 'DejaVu Sans Mono:bold:size=10',
+  font = 'DejaVu Sans Mono:bold:size=12',
   xftalpha = 0.8,
   uppercase = false,
   default_color = white,
@@ -35,7 +35,7 @@ conky.config = {
  
 conky.text=[[
 ${font DejaVu Sans Mono:bold:size=14}RAM ${alignr}$memperc%${font}
-${font DejaVu Sans Mono:bold:size=12}${stippled_hr}${font}
+${font DejaVu Sans Mono:bold:size=14}${stippled_hr}${font}
 
 ${top_mem name 1} ${alignr}${top_mem mem 1}
 ${top_mem name 2} ${alignr}${top_mem mem 2}
