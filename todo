@@ -1,7 +1,7 @@
 # -- Conky settings -- #
 conky.config = {
   background = false,
-  update_interval = 2,
+  update_interval = 120,
   cpu_avg_samples = 2,
   net_avg_samples = 2,
   override_utf8_locale = true,
@@ -35,7 +35,7 @@ conky.config = {
 }
 
 conky.text = [[
-${font DejaVu Sans Mono:bold:size=14}${alignc}TO-DO LIST${alignr}${font DejaVu Sans Mono:size=12}(${lines /home/artems/todo.txt})${font}
+${font DejaVu Sans Mono:bold:size=14}${alignc}TO-DO
 ${stippled_hr}
-${voffset 10}${execp ~/.conky/viewnotes.sh}
+${exec python ~/.conky/get_todos.py}
 ]]
