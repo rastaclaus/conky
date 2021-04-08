@@ -1,44 +1,50 @@
-import subprocess as sp
-import json
-from pprint import pformat
-from textwrap import wrap
+# pylint: disable=invalid-name,missing-docstring
+import os
+from pathlib import Path
+from textwrap import fill
 
-NOTES_COMMAND = ['joplin', 'ls', '-l', '-t', 'n', '--format', 'json']
+import configparser as cpr
 
-
-def get_note_ids():
-    res = sp.run(NOTES_COMMAND, stdout=sp.PIPE, encoding='utf-8')
-    data = json.loads(res.stdout)
-    for entry in data:
-        yield entry['id']
+import simplenote as snapi
 
 
-def print_note_text(note_text):
-    lines = note_text.split('\n')
-    header = lines[0]
-    if len(lines) > 2:
-        header += ':'
-    print(header)
-    text = ' '.join(lines[1:])
-    for line in wrap(text, 38):
-        print(line)
+HOME = os.getenv('HOME')
+SNCONFIG = Path(HOME) / '.snclirc'
+NOTE_WIDTH = 46
+TODO_INDENT = 6
 
 
-def get_note_text(note_id):
-    command = ['joplin', 'cat', note_id, '--format', 'json']
-    res = sp.run(command, stdout=sp.PIPE, stderr=sp.PIPE, encoding='utf-8')
-    return res.stdout
+def get_credentials(fname):
+    config = cpr.ConfigParser()
+    config.read(fname)
+    return (
+        config['sncli']['cfg_sn_username'],
+        config['sncli']['cfg_sn_password']
+    )
 
 
-def print_note(note_id):
-    note_text = get_note_text(note_id)
-    print_note_text(note_text)
+def get_notes_list():
+    uname, pwd = get_credentials(SNCONFIG)
+    sn = snapi.Simplenote(uname, pwd)
+    notes, status = sn.get_note_list()
+    if status != 0:
+        raise RuntimeError("cannot sync with server")
+
+    notes = filter(lambda n: not n['deleted'], notes)
+    return list(notes)
+
+
+def print_note(note):
+    for line in note['content'].split('\n'):
+        indent = " " * TODO_INDENT if line.startswith('-') else ""
+        print(fill(line, NOTE_WIDTH, subsequent_indent=indent))
+    print()
 
 
 def main():
-    for note_id in get_note_ids():
-        print_note(note_id)
-        print()
+    notes_list = get_notes_list()
+    for note in notes_list:
+        print_note(note)
 
 
 if __name__ == '__main__':

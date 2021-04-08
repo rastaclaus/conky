@@ -7,4 +7,4 @@ conky -c ~/.conky/mem &
 conky -c ~/.conky/todo &
 conky -c ~/.conky/notes &
 conky -c ~/.conky/news &
-conky -c ~/.conky/calendar &
+# conky -c ~/.conky/calendar &
