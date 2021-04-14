@@ -46,5 +46,6 @@ def main():
     for note in notes_list:
         print_note(note)
 
+
 if __name__ == '__main__':
     main()
